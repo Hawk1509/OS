@@ -4,24 +4,20 @@
 #include<stdlib.h>
 void main(){
 	pid_t a;
+	pid_t x,y,z;
 	a=fork();
 	if(a>0){
+	wait(NULL);
 		printf("\nI am a parent process\n");
-		printf("ppid parent process: %d",getppid());
-		;}
+		x=getpid();
+		printf("pid: %d",x);}
 	else if(a==0){
+		z=getpid();
+		y=getppid();
 		printf("\nI am a child process\n");
-		printf("ppid child process: %d",getppid());
-		wait(NULL);}
+		printf("ppid: %d",y);
+		printf("pid: %d",z);}
 	else{
 		printf("Error\n");
 	}
 }
-
-/*
-OUTPUT
-I am a parent process
-ppid parent process: 3206
-I am a child process
-ppid child process: 1673
-*/
