@@ -104,3 +104,59 @@ void main()
 	printf("\nAverage waiting time=%f",w);
 	printf("\nAverage turnaround time=%f\n",st);
 }
+
+/*
+OUTPUT
+Enter the number of processes: 5 
+
+Enter the process name: p1
+
+Enter the arrival time: 3
+
+Enter the burst time: 4
+
+Enter the process name: p2
+
+Enter the arrival time: 5
+
+Enter the burst time: 3
+
+Enter the process name: p3
+
+Enter the arrival time: 0
+
+Enter the burst time: 2
+
+Enter the process name: p4
+
+Enter the arrival time: 5
+
+Enter the burst time: 1
+
+Enter the process name: p5
+
+Enter the arrival time: 4
+
+Enter the burst time: 3
+ |pname | arrival time	 | burst time	 | status	 | wait	 | turn
+ |p3 	 |0 	 	 |2 	 	 |1 	 	 |0 	 |2 
+
+ |p1 	 |3 	 	 |4 	 	 |1 	 	 |3 	 |7 
+
+ |p5 	 |4 	 	 |3 	 	 |1 	 	 |7 	 |10 
+
+ |p2 	 |5 	 	 |3 	 	 |1 	 	 |10 	 |13 
+
+ |p4 	 |5 	 	 |1 	 	 |1 	 	 |13 	 |14 
+
+
+
+Gantt chart
+_____________________________________________
+|p3 |idle |p1 |p5 |p2 |p4 |
+_____________________________________________
+0 2 3 7 10 13 14 
+
+Average waiting time=6.600000
+Average turnaround time=9.200000
+/*
