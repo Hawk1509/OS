@@ -12,5 +12,5 @@ GCC or another C compiler
 
 Installation
 *Clone the repository:*
-   git clone "https://github.com/yourusername/SimpleOS.git"
+   git clone "https://github.com/Hawk1509/OS.git"
 
