@@ -15,7 +15,7 @@ void main(int argc, char *argv[])
     if (a > 0)
     {
         wait(NULL);
-        printf("Child terminated");
+        printf("\nChild terminated");
     }
     else if (a == 0)
     {
