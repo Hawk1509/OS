@@ -26,3 +26,9 @@ void main(int argc, char *argv[])
         printf("Error\n");
     }
 }
+/*Output
+❯ gcc -o file ExecCatComm.c
+❯ ./file hello.txt
+hel ios skiow
+Child terminated
+*/
