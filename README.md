@@ -6,6 +6,6 @@ SimpleOS is an open-source operating system designed for educational purposes. I
 *Prerequisites*
 GCC or another C compiler
 
-Installation
+Getting Started
    git clone "https://github.com/Hawk1509/OS.git"
 
