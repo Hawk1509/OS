@@ -31,4 +31,8 @@ void main(int argc, char *argv[])
 ❯ ./file hello.txt
 hel ios skiow
 Child terminated
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> ef6478e7b837e95ac9ae75acef2de6a1c03d9066
