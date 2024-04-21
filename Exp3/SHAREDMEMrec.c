@@ -16,4 +16,7 @@ void main()
 	}
 	printf("Factorial of %d : %d",n,f);
 }
-
+/*Output
+Data read is 5
+Factorial of 5 : 120   
+*/

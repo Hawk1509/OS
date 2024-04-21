@@ -13,4 +13,9 @@ void main()
 	gets(s);
 	strcpy(sh,s);
 }
-//	
+/*
+Output
+Enter the limit:5
+*/
+
+
