@@ -159,4 +159,35 @@ void main()
 	printf("\n");
 	
 }
-	
+/*Output
+❯ gcc rr.c -lpthread
+❯ ./a.out
+emter the no of process :3
+
+enter the process name:p1
+enter the arrival time of process:0
+enter the burst time of process:8
+
+enter the process name:p2
+enter the arrival time of process:1
+enter the burst time of process:1
+
+enter the process name:p3
+enter the arrival time of process:3
+enter the burst time of process:2
+enter the time quantum:3
+
+|       process |       AT      |       BT      |       CT      |       TAT              |       WT              |
+|       p1      |       0       |       8       |       11      |       11               |       3               |
+|       p2      |       1       |       1       |       4       |       3|       2               |
+|       p3      |       3       |       2       |       6       |       3|       1               |
+
+
+________________________________________________________________
+|p1     |p2     |p3     |p1     |p1     |
+________________________________________________________________
+0       3       4       6       9       11
+
+average turnaround time is 5.666667
+average waiting time is 2.000000
+*/	
