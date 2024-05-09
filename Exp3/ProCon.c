@@ -66,4 +66,28 @@ void main()
 		pthread_join(b[k],NULL);
 	}
 }
-		
+/*
+Output
+
+ Enter no of producers3
+
+ Enter no of consumers3
+producer 0 produces 0 item buffered[0]:1
+producer 2 produces 1 item buffered[1]:2
+producer 1 produces 2 item buffered[2]:3
+consumer 0 consumes 0 item buffered[0]:0
+consumer 2 consumes 1 item buffered[1]:1
+consumer 1 consumes 2 item buffered[2]:2
+producer 0 produces 3 item buffered[3]:4
+consumer 0 consumes 3 item buffered[3]:3
+producer 2 produces 4 item buffered[4]:5
+producer 1 produces 5 item buffered[0]:6
+consumer 2 consumes 4 item buffered[4]:4
+consumer 1 consumes 5 item buffered[0]:5
+producer 0 produces 6 item buffered[1]:7
+producer 2 produces 7 item buffered[2]:8
+consumer 0 consumes 6 item buffered[1]:6
+producer 1 produces 8 item buffered[3]:9
+consumer 1 consumes 7 item buffered[2]:7
+consumer 2 consumes 8 item buffered[3]:8
+*/	
