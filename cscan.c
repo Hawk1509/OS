@@ -2,7 +2,6 @@
 main()
 {
 	int t[20], d[20], h, i, j, n, temp, k, atr[20], tot, p, sum=0,end=199;
-	clrscr();
 	printf("enter the no of tracks to be traversed");
 	scanf("%d",&n);printf("enter the position of head");
 	scanf("%d",&h);
@@ -68,3 +67,12 @@ main()
 		}	
 		printf("\nTotal head movements:%d\n",sum);
 }
+/*
+OUTPUT
+enter the no of tracks to be traversed8
+enter the position of head53
+enter the tracks98 183 37 122 14 124 65 67
+Scheduling order:
+53      37      14      0      199      183     124     122    98       67      65 
+Total head movements:386
+*/
